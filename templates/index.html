@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Car Control</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body style="background-color: #151517;">
+    <div class="container">
+        <h1 class="title">Internet Car</h1>
+        
+        <!-- Video Stream -->
+        <div class="video-container">
+            <img src="{{ video_stream_url }}" alt="Live Feed" id="video-feed">
+        </div>
+        
+        <div class="control-wrapper">
+            <!-- Motor Controls -->
+            <div class="control-grid">
+                <button class="btn forward" id="forward">↑</button>
+                <button class="btn left" id="left">←</button>
+                <button class="btn stop" id="stop">STOP</button>
+                <button class="btn right" id="right">→</button>
+                <button class="btn backward" id="backward">↓</button>
+            </div>
+
+            <!-- Pan-Tilt Sliders -->
+            <div class="slider-container">
+                <h2>Camera Control</h2>
+                <div class="slider-group">
+                    <label>Pan (I/K):</label>
+                    <input type="range" min="0" max="180" value="90" class="slider" id="pan-slider">
+                    <span id="pan-value">90°</span>
+                </div>
+                <div class="slider-group">
+                    <label>Tilt (J/L):</label>
+                    <input type="range" min="0" max="180" value="90" class="slider" id="tilt-slider">
+                    <span id="tilt-value">90°</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add this after the motor controls section -->
+        <div class="emergency-stop">
+            <button class="btn emergency-btn" id="servo_stop">EMERGENCY STOP</button>
+        </div>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>
