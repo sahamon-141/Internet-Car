@@ -60,13 +60,12 @@ This project is a **remotely controllable RC car** powered by a **Raspberry Pi 4
 ---
 
 ## 🧩 File Structure
-/static/
-├── styles.css # UI styling
-├── script.js # Frontend logic for control and sliders
-/templates/
-└── index.html # Main control page
-app.py # Flask backend server
-
+/static/ <br/>
+├── styles.css # UI styling <br/>
+├── script.js # Frontend logic for control and sliders <br/>
+/templates/ <br/>
+└── index.html # Main control page <br/>
+app.py # Flask backend server <br/>
 
 ---
 
