@@ -112,7 +112,7 @@ curl -fsSL https://tailscale.com/install.sh | sh
 ```
 Authenticate and get Pi's Tailscale IP
 
-Access: http://<tailscale-ip>:5000
+Access: `http://<tailscale-ip>:5000`
 
 Auto startup tailscale on boot 
 ```bash
