@@ -119,4 +119,6 @@ Auto startup tailscale on boot
 sudo systemctl enable tailscaled
 ```
 
-
+### 4. Run the Program
+run the flask server `sudo python3 app.py`
+enter `localhost:5000` on any web browser for interface
